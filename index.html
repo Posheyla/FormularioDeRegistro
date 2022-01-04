@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>
@@ -9,57 +10,63 @@
         <h1>
             Registration Form
         </h1>
-        <form>
+        <form  action="/process" method="post">
             <div>
-                <label for="nombreUsuario">
+                <label>
                     First Name:*
                 </label>
                 <input type="text" name="nombreUsuario">
             </div>
             <div>
-                <label for="apellidoUsuario">
+                <label>
                     Last Name:*
                 </label>
                 <input type="text" name="apellidoUsuario">
             </div>
             <div>
-                <label for="emailUsuario">
+                <label>
                     Email Address:*
                 </label>
                 <input type="text" name="emailUsuario">
             </div>
             <div>
-                <label for="passworldUsuario">
+                <label>
                     Passworld:*
                 </label>
                 <input type="password" name="passworldUsuario">
             </div>
             <div>
-                <label for="confpassworldUsuario">
+                <label>
                     Confirm Passworld:*
                 </label>
                 <input type="password" name="confpassworldUsuario">
             </div>
             <div>
-                <label for="birthdayUsuario">
+                <label>
                     Birthday:
                 </label>
                 <input type="date" name="birthdayUsuario">
             </div>
             <div>
-                <label for="genderUsuario">
-                    <input type="radio" name="font" value="genderUsuario" id="genderUsuario">
-                    <label for="genderUsuario" >Male</label>
-                    <input type="radio" name="font" value="genderUsuario" id="genderUsuario">
-                    <label for="genderUsuario" >Female</label>
-                    <input type="radio" name="font" value="genderUsuario" id="genderUsuario">
-                    <label for="genderUsuario" >Non-binary</label>
-                    <input type="radio" name="font" value="genderUsuario" id="genderUsuario">
-                    <label for="genderUsuario" >I prefer not to answer</label>
+                <input type="radio" name="font" value="genderUsuario" >
+                <label>
+                    Male
+                </label>
+                <input type="radio" name="font" value="genderUsuario" >
+                <label>
+                    Female
+                </label>
+                <input type="radio" name="font" value="genderUsuario" >
+                <label>
+                    Non-binary
+                </label>
+                <input type="radio" name="font" value="genderUsuario" >
+                <label>
+                    I prefer not to answer
                 </label>
             </div>
             <div>
-                <label for="descriptionUsuario">
+                <label>
                     A short description about myself:
                 </label>
             </div> 
@@ -67,7 +74,7 @@
                 <textarea id="comentario" name="descriptionUsuario"></textarea>
             </div>   
             <div>
-                <label for="languageUsuario">
+                <label>
                     Favorite Language:
                 </label>
                 <select id="languageUsuario" name="languageUsuario">
@@ -84,7 +91,7 @@
             </div> 
             <div>
                 <input type="checkbox" name="confirmation">
-                <label for="confirmation">Yes, I would like to receive periodic email updates</label>
+                <label >Yes, I would like to receive periodic email updates</label>
             </div> 
             <input type="submit" value="Create Account">
             <p>
